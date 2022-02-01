@@ -1,0 +1,25 @@
+{
+  "name": "openapi-generator-sandbox",
+  "version": "0.0.1",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate:server": "openapi-generator-cli generate -i petstore.openapi.yml -g nodejs-express-server -o ./server",
+    "generate:client": "openapi-generator-cli generate -i petstore.openapi.yml -g typescript-axios -o ./client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/turusuke/openapi-generator-sandbox.git"
+  },
+  "author": "turusuke <mail@turusuke.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/turusuke/openapi-generator-sandbox/issues"
+  },
+  "homepage": "https://github.com/turusuke/openapi-generator-sandbox#readme",
+  "devDependencies": {
+    "@openapitools/openapi-generator-cli": "^2.4.26"
+  }
+}
